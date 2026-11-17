@@ -43,7 +43,7 @@ Redeploy after setting the variable.
 
 ## 4. Protect `/admin` using email OTP
 In Cloudflare Zero Trust, create a self-hosted Access application for the exact admin hostname/path, such as `dashboard.example.com/admin*`.
-Create an Allow policy containing only `andycrabbs@gmail.com`, and enable the One-time PIN identity provider. Do not protect `/` or `/api/status`.
+Create an Allow policy containing only `**********@gmail.com`, and enable the One-time PIN identity provider. Do not protect `/` or `/api/status`.
 
 Important: if the Worker remains on `workers.dev`, also create an Access application for `space-weather-api.<account>.workers.dev/api/admin/*`. Use the same Allow policy. The public `/api/status` route must remain public.
 
